@@ -113,9 +113,9 @@ ddbpmm = function(x,
 
 
 template_density = function(x,
-                            x.axis = seq(0, 1, 0.01),
+                            x.axis = seq(0, 1, 0.02),
                             init = FALSE,
-                            binwidth = 0.01,
+                            binwidth = 0.02,
                             reduce = FALSE)
 {
   labels = names(mobster:::.params_Pi(x))
@@ -216,13 +216,13 @@ template_density = function(x,
 #'    shape = 2,
 #'    scale = 0.05
 #'  ))
-#' ggplot(v, aes(x)) + geom_histogram(binwidth = 0.01)
+#' ggplot(v, aes(x)) + geom_histogram(binwidth = 0.02)
 #' 
 #' # Or use the parameters of a model available
 #' data('fit_example', package = 'mobster')
 #' 
 #' v = data.frame(x = rdbpmm(x = fit_example$best, n = 1000))
-#' ggplot(v, aes(x)) + geom_histogram(binwidth = 0.01)
+#' ggplot(v, aes(x)) + geom_histogram(binwidth = 0.02)
 rdbpmm = function(x,
                   a = NULL,
                   b = NULL,
