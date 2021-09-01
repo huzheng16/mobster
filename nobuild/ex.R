@@ -24,7 +24,7 @@ input = data.frame(
 )
 
 # Input data
-ggplot(input, aes(VAF, fill = label)) + geom_histogram(binwidth = 0.01) + xlim(0,1)
+ggplot(input, aes(VAF, fill = label)) + geom_histogram(binwidth = 0.02) + xlim(0,1)
 
 # Fit
 fit = mobster_fit(input, K = 1:3, parallel = TRUE, samples = 1, tail = c(TRUE, F))
@@ -45,7 +45,7 @@ ggsave('example.pdf', fig, width = 10, height = 12)
 fit$best$data
 
 plot.dbpmm(fit$best, cutoff_assignment = .9)
-ggplot(mobster:::Clusters(fit$best, cutoff_assignment = .99), aes(VAF, fill = label)) + geom_histogram(binwidth = 0.01)
+ggplot(mobster:::Clusters(fit$best, cutoff_assignment = .99), aes(VAF, fill = label)) + geom_histogram(binwidth = 0.02)
 
 # 10 resamples
 bootstrap_results = mobster_bootstrap(fit_example$best, n.resamples = 600)
