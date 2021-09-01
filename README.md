@@ -50,7 +50,7 @@ You can install the released version of `mobster` from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("caravagnalab/mobster")
+devtools::install_github("huzheng16/mobster")
 ```
 
 -----
