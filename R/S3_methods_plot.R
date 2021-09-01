@@ -45,7 +45,7 @@ plot.dbpmm = function(x,
   # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   # Plotting variables
   # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-  binwidth = 0.01
+  binwidth = 0.02
   domain = seq(0, 1, binwidth)
   
   labels = names(mobster:::.params_Pi(x))
