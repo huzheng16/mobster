@@ -24,7 +24,7 @@
 #' print(new_assignments)
 #' 
 #' # Plot a histogram coloured according to the clusters
-#' ggplot(new_assignments, aes(VAF, fill = cluster)) + geom_histogram(binwidth = 0.01)
+#' ggplot(new_assignments, aes(VAF, fill = cluster)) + geom_histogram(binwidth = 0.02)
 Clusters_denovo = function(x, y)
 {
   mobster:::is_mobster_fit(x)
