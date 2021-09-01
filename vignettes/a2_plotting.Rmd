@@ -192,8 +192,8 @@ trace_points = lapply(steps, function(w, x) {
   # Hidden function (:::)
   points = mobster:::template_density(
     new.x,
-    x.axis = seq(0, 1, 0.01),
-    binwidth = 0.01,
+    x.axis = seq(0, 1, 0.02),
+    binwidth = 0.02,
     reduce = TRUE
   )
   points$step = w
