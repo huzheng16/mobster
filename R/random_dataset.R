@@ -103,7 +103,7 @@ random_dataset = function(N = 5000,
   ids = c(unlist(ids_B), ids_tail)[1:N]
   
   plot = ggplot(data.frame(x = samples), aes(x, fill = ids)) +
-    geom_histogram(binwidth = 0.01) +
+    geom_histogram(binwidth = 0.02) +
     geom_vline(xintercept = means) +
     labs(title = 'MOBSTER synthetic dataset',
          subtitle = paste0('N = ', N)) +
