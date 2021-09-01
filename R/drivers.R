@@ -6,7 +6,7 @@ has_drivers_annotated = function(x)
 add_extra_plot_annotations = function(x,
                                       annotation_extras,
                                       base_plot,
-                                      binwidth = 0.01)
+                                      binwidth = 0.02)
 {
   has_drivers = mobster:::has_drivers_annotated(x)
   has_annotations = !all(is.null(annotation_extras))
